@@ -18,4 +18,13 @@ Step-6:Now we got the addres for the desired pool we need the interface for that
 
 Step-7:Address sorted out, we nees to approve the ERC-20 token(WETH) so that the deposit is performed. For that we will cretea different function, before that we will copy-pate an interface standard from github. Now complete the function till apploving.
 
-Step-8:Now we need to deposit the colletral. we will use the "deposit" function form the 'ILendingPool interface'or the 'get_lending_pool()' function
+Step-8:Now we need to deposit the colletral. we will use the "deposit" function form the 'ILendingPool interface'or the 'get_lending_pool()' function.
+
+step-9: Deposited the ETH in the AAVE protocoa. Now we need to figure out how to borrow the desired toke in such a way that we have less risk factor and determin its intres. And for that we will us eanothe function "getUserData()" which is also in the documentation. It returns alot of values but we need only(totalCollateralETH,totalDebtETH,availableBorrowsETH) for that we will create new function.
+
+Step-10: Now that we have recieved how much we can borrow, we need the token(in this case DAI with respect to ETH) price-feed and we will use an interface for that that we have alreday used in one of the projects i.e. AggregatorV3Interface, copy paste it in the interfaces folder. Additioanlly we will create an function to create "get_asset_price()".We will alo make changes in  our Yaml file to. Complete the Function. set how much u want to borrow without liqudating your colletral(deposit).
+
+Step-11: Next step is to borrow. make a seperate function use borrow function for the interface 'Ilendingpool' fill up the required parameters.and there u go u borrowed it 
+
+Step-12: Finally, the last step, repayment using the 'repay' function form interface 'Ilendingpool' in that function we need to approve the transaction call the function fill up the parameters and voila we have done it. Next section to write a test script.
+
