@@ -54,7 +54,7 @@ def get_borrowable_data(lending_pool, account):
     print(f"u have {totalCollateralETH} worth ETH deposited")
     print(f"u have {totalDebtETH} worth ETH debt")
     print(f"u have {availableBorrowsETH} worth ETH u can borrow\n")
-    return (float(availableBorrowsETH), float(totalDebtETH))
+    return (float(availableBorrowsETH), float(totalDebtETH), (totalCollateralETH))
 
 
 # amount, address_of_lending_pool_contract, ERC-20_token_address, Account_selected
@@ -90,7 +90,9 @@ def main():
     tx = lending_pool.deposit(erc20_address, AMT, account.address, 0, {"from": account})
     tx.wait(1)
     print("\nDeposited\n")
-    borrowable_ETH, total_debt = get_borrowable_data(lending_pool, account)
+    borrowable_ETH, total_debt, totalCollateralETH = get_borrowable_data(
+        lending_pool, account
+    )
 
     print("Lets_borrow\n")
     dai_eth_price = get_asset_price(
@@ -121,3 +123,15 @@ def main():
     print(
         "You just deposited, borrowed, and repayed with Aave, Brownie, and Chainlink!"
     )
+
+    print("\nWithdrawing....\n")
+    borrowable_ETH, total_debt, totalCollateralETH = get_borrowable_data(
+        lending_pool, account
+    )
+    max_amt=500
+    tx = lending_pool.withdraw(
+        erc20_address,max_amt, account.address, {"from": account}
+    )
+    tx.wait(1)
+    print("\nWithdrawed\n")
+    get_borrowable_data(lending_pool, account)
