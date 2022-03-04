@@ -30,6 +30,6 @@ Step-11: Next step is to borrow. make a seperate function use borrow function fo
 
 Step-12: Finally, the last step, repayment using the 'repay' function form interface 'Ilendingpool' in that function we need to approve the transaction call the function fill up the parameters and voila we have done it. Next section to write a test script.
 
-Step-13: One more thing i also added the withdraw Function
+Step-13: One more thing i also added the withdraw Function. I am not able to figgure out the 'amount.max' if someone who reads this and know it let em know.
 
 -----
