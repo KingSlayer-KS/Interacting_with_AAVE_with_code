@@ -1,3 +1,5 @@
+# Setps Involved
+
 In this project we will not be deploying any projects as all the projects are 
 already deployed, So we will just communicate with then and perform folowing 
 opperations:
@@ -5,7 +7,7 @@ opperations:
 2. Borrowing that asset on behalf of the colletral
     1. Sell the borrowed asset, this method is called short selling.
 3. Repay the borrowed asset in full. 
-
+---------
 Step-1:lets Analyse the deposit function, we see that initally the Kovan ETH is converted to WETH(ERC20_Version_of_ETH).Now in our interface we will copy-paste  the contract converion from ETH -> WETH. 
 
 Step-2: we will make a yaml file and add nesseary configrations.Now we need to figure out how to test the scripts on alocal net, here we need not to deploy any mocks as oracles are not in use but if one deem to tinker with it one can surely can. So for local testing we will be using Mainnet-Fork. After that we will fetch some WETH if the active network is mainnet-fork(local) 
@@ -28,3 +30,4 @@ Step-11: Next step is to borrow. make a seperate function use borrow function fo
 
 Step-12: Finally, the last step, repayment using the 'repay' function form interface 'Ilendingpool' in that function we need to approve the transaction call the function fill up the parameters and voila we have done it. Next section to write a test script.
 
+-----
