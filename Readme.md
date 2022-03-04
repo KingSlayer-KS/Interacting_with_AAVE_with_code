@@ -1,4 +1,4 @@
-# Setps Involved
+# Setps Involved(With withdraw function in the script[withdraw_not_tested])
 
 In this project we will not be deploying any projects as all the projects are 
 already deployed, So we will just communicate with then and perform folowing 
@@ -29,5 +29,7 @@ Step-10: Now that we have recieved how much we can borrow, we need the token(in 
 Step-11: Next step is to borrow. make a seperate function use borrow function for the interface 'Ilendingpool' fill up the required parameters.and there u go u borrowed it 
 
 Step-12: Finally, the last step, repayment using the 'repay' function form interface 'Ilendingpool' in that function we need to approve the transaction call the function fill up the parameters and voila we have done it. Next section to write a test script.
+
+Step-13: One more thing i also added the withdraw Function
 
 -----
