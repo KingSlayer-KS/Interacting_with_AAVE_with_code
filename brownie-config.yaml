@@ -10,7 +10,7 @@ compiler:
 networks:
   default: mainnet-fork
   kovan:
-    weth_token: '0xd0a1e359811322d97991e03f863a0c30c2cf029c'
+    weth_token: '0xd0A1E359811322d97991E03f863a0C30C2cF029C'
     lending_pool_addresses_provider: '0x88757f2f99175387ab4c6a4b3067c77a695b0349'
     dai_eth_price_feed: '0x22B58f1EbEDfCA50feF632bD73368b2FdA96D541'
     dai_token: '0xFf795577d9AC8bD7D90Ee22b6C1703490b6512FD'
@@ -19,7 +19,9 @@ networks:
     lending_pool_addresses_provider: '0xB53C1a33016B2DC2fF3653530bfF1848a515c8c5'
     dai_eth_price_feed: '0x773616E4d11A78F511299002da57A0a94577F1f4'
     dai_token: '0x6B175474E89094C44Da98b954EedeAC495271d0F'
-
+  avax-main-fork:
+    lending_pool_addresses_provider: '0x7fdC1FdF79BE3309bf82f4abdAD9f111A6590C0f'
+    weth_token: '0x49D5c2BdFfac6CE2BFdB6640F4F80f226bc10bAB'
 wallets:
   from_key: ${Private_key}
 
