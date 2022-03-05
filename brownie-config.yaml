@@ -21,7 +21,17 @@ networks:
     dai_token: '0x6B175474E89094C44Da98b954EedeAC495271d0F'
   avax-main-fork:
     lending_pool_addresses_provider: '0x7fdC1FdF79BE3309bf82f4abdAD9f111A6590C0f'
-    weth_token: '0x49D5c2BdFfac6CE2BFdB6640F4F80f226bc10bAB'
+    weth_token: '0x53f7c5869a859F0AeC3D334ee8B4Cf01E3492f21'
+  avax-test:
+    weth_token: '0x9668f5f55f2712Dd2dfa316256609b516292D554'
+
+
+  polygon-main-fork:
+    weth_token: '0x28424507fefb6f7f8E9D3860F56504E4e5f5f390'
+    lending_pool_addresses_provider: '0xd05e3E715d945B59290df0ae8eF85c1BdB684744'
+    dai_eth_price_feed: '0xFC539A559e170f848323e19dfD66007520510085'
+    dai_token: '0x27F8D03b3a2196956ED754baDc28D73be8830A6e'
+
 wallets:
   from_key: ${Private_key}
 
