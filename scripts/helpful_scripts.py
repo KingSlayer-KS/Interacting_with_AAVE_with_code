@@ -5,7 +5,7 @@ LOCAL_DEVELOPMENT_ENVS = [
     "mainnet-fork",
     "development",
     "Ganache-local",
-    'polygon-main-fork',
+    "polygon-main-fork",
     "avax-main-fork"
 ]
 

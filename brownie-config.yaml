@@ -19,15 +19,21 @@ networks:
     lending_pool_addresses_provider: '0xB53C1a33016B2DC2fF3653530bfF1848a515c8c5'
     dai_eth_price_feed: '0x773616E4d11A78F511299002da57A0a94577F1f4'
     dai_token: '0x6B175474E89094C44Da98b954EedeAC495271d0F'
+    
   avax-main-fork:
     lending_pool_addresses_provider: '0xDFE521292EcE2A4f44242efBcD66Bc594CA9714B'
-    weth_token: '0x53f7c5869a859F0AeC3D334ee8B4Cf01E3492f21'
+    wavax_token: '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7'
   avax-test:
-    weth_token: '0x9668f5f55f2712Dd2dfa316256609b516292D554'
+    wavax_token: '0xd00ae08403B9bbb9124bB305C09058E32C39A48c'
 
 
   polygon-main-fork:
     weth_token: '0x28424507fefb6f7f8E9D3860F56504E4e5f5f390'
+    lending_pool_addresses_provider: '0xd05e3E715d945B59290df0ae8eF85c1BdB684744'
+    dai_eth_price_feed: '0xFC539A559e170f848323e19dfD66007520510085'
+    dai_token: '0x27F8D03b3a2196956ED754baDc28D73be8830A6e'
+  polygon-test:
+    weth_token: '0xA6FA4fB5f76172d178d61B04b0ecd319C5d1C0aa'
     lending_pool_addresses_provider: '0xd05e3E715d945B59290df0ae8eF85c1BdB684744'
     dai_eth_price_feed: '0xFC539A559e170f848323e19dfD66007520510085'
     dai_token: '0x27F8D03b3a2196956ED754baDc28D73be8830A6e'
