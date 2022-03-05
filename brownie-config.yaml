@@ -20,7 +20,7 @@ networks:
     dai_eth_price_feed: '0x773616E4d11A78F511299002da57A0a94577F1f4'
     dai_token: '0x6B175474E89094C44Da98b954EedeAC495271d0F'
   avax-main-fork:
-    lending_pool_addresses_provider: '0x7fdC1FdF79BE3309bf82f4abdAD9f111A6590C0f'
+    lending_pool_addresses_provider: '0xDFE521292EcE2A4f44242efBcD66Bc594CA9714B'
     weth_token: '0x53f7c5869a859F0AeC3D334ee8B4Cf01E3492f21'
   avax-test:
     weth_token: '0x9668f5f55f2712Dd2dfa316256609b516292D554'
