@@ -6,7 +6,7 @@ opperations:
 1. Depositing Some ETH as colletral
 2. Borrowing that asset on behalf of the colletral 
     1. Sell the borrowed asset, this method is called short selling.
-3. Repay the borrowed asset in full. 
+3. Repay the borrowed asset in full.
 ---------
 Step-1:lets Analyse the deposit function, we see that initally the Kovan ETH is converted to WETH(ERC20_Version_of_ETH).Now in our interface we will copy-paste  the contract converion from ETH -> WETH. 
 
