@@ -3,7 +3,7 @@
 In this project we will not be deploying any contracts as all the projects are 
 already deployed, So we will just communicate with then and perform folowing 
 opperations:
-1. Depositing Some ETH as colletral
+1. Depositing Some ETH as colletral 
 2. Borrowing that asset on behalf of the colletral 
     1. Sell the borrowed asset, this method is called short selling.
 3. Repay the borrowed asset in full.
