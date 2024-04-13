@@ -34,4 +34,4 @@ The project will consist of several steps, each focusing on a specific operation
 ## Conclusion
 This README provides an overview of the project's objectives, the AAVE protocol's features, and the technologies used to develop the terminal-based Python application. By following the detailed instructions, users can gain a deeper understanding of decentralized finance and how to utilize the AAVE protocol for lending and borrowing cryptocurrencies.
 
-For further assistance or inquiries, please refer to the project documentation or reach out to the project contributors.
+For further assistance or inquiries, please refer to the project documentation of AAVE or reach out at sirjanssk2933@proton.me.
